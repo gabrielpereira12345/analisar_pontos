@@ -51,7 +51,7 @@ library(shinycssloaders)
 
 mapa <- function(
     df,
-    path = "~/Downloads/index.html",
+    path = "index.html",
     save = FALSE){
   dados <- df
   casas <- dados |> dplyr::filter(startsWith(tipo, "casas"))
@@ -370,8 +370,3 @@ renderUI({
     div("another page")
 })
 ```
-
-
-
-
-
